@@ -1,0 +1,40 @@
+﻿@page
+@model Nevada.Pages.OrdersModel
+@{
+}
+
+<h3>Orders</h3>
+
+<hr />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Shoe Name
+            </th>
+            <th>
+                Price
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var order in Model.ShoeOrders)
+        {
+            <tr>
+                <td>
+                    @order.Id
+                </td>
+                <td>
+                    @order.ShoeName
+                </td>
+                <td>
+                    @order.Price
+                </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>

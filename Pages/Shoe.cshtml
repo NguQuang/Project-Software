@@ -10,7 +10,7 @@
         </h1>
         <p class="smallText"><i>Only one pair of shoes per purchase!</i></p>
     </div>
-    <div class="container">    
+    <div class="container">
         <div class="row">
             <div class="col-12 mb-5 mt-5">
                 <div class="w-100 row divEdit">
@@ -20,12 +20,25 @@
                     <div class="col-8 align-items-center">
                         <div class="align-middle textEdit">
                             <h3 style="text-align:left;">Choose your own Pair of Shoes!</h3>
-                            <p style="text-align:left;">Choose our service</p>
-                            <a class="btn btn-primary" style="float:left" asp-area="" asp-page="Forms/CustomerShoes">Pick your shoes</a>
+                            <a class="btn btnEdit1 btnEdit" style="float:left" >Pick your shoes</a>
                         </div>
                     </div>
                 </div>
+
             </div>
+            @foreach (var shoe in Model.ShoeDB)
+            {
+                var imagePath = "~/images/" + (shoe.ImageTitle + ".jpg");
+                <div class="col-4 mb-5">
+                    <a class="shoe-img" asp-area="" asp-page="Checkout/Checkout"
+                   asp-route-ImageTitle="@shoe.ImageTitle"
+                   asp-route-ShoeName="@shoe.ShoeName"
+                   asp-route-Price="@shoe.Price">
+                        <img src="@imagePath" class="w-100" asp-append-version="true" />
+                    </a>
+                    <br />
+                </div>
+            }
         </div>
     </div>
 </div>
