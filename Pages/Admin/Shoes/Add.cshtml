@@ -1,0 +1,55 @@
+﻿@page
+@model Nevada.Pages.Admin.Shoes.AddModel
+@{
+}
+<div class="bg-secondary bg-opacity-10 mb-5">
+    <div class="container">
+        <h1>Add Shoes</h1>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <form method="post">
+        <div class="mb-3">
+            <label for="shoeName" class="form-label">Shoe Name</label>
+            <input type="text" class="form-control" id="shoeName" asp-for="AddShoesRequest.ShoeName" />
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="text" class="form-control" id="price" asp-for="AddShoesRequest.Price" />
+        </div>
+        <div class="mb-3">
+            <label for="size" class="form-label">Size</label>
+            <input type="number" class="form-control" id="size" asp-for="AddShoesRequest.Size" />
+        </div>
+        <div class="mb-3">
+            <label for="property" class="form-label">Property</label>
+            <textarea class="form-control" id="property" asp-for="AddShoesRequest.Property"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="imageTitle" class="form-label">Image Title</label>
+            <input type="text" class="form-control" id="imageTitle" asp-for="AddShoesRequest.ImageTitle" />
+        </div>
+         <div class="mb-3">
+            <label for="ImageTitle1" class="form-label">ImageTitle1</label>
+            <input type="text" class="form-control" id="ImageTitle1" asp-for="AddShoesRequest.ImageTitle1"  />
+        </div>
+        <div class="mb-3">
+            <label for="ImageTitled2" class="form-label">ImageTitle2</label>
+            <input type="text" class="form-control" id="ImageTitle2" asp-for="AddShoesRequest.ImageTitle2" />
+        </div>
+        <div class="mb-3">
+            <label for="ImageTitle3" class="form-label">ImageTitle3</label>
+            <input type="text" class="form-control" id="ImageTitle3" asp-for="AddShoesRequest.ImageTitle3" />
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="outOfStock" asp-for="AddShoesRequest.OutOfStock">
+            <label class="form-check-label" for="outOfStock">
+                Out of stock
+            </label>
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,46 @@
+﻿@page
+@model Nevada.Pages.ViewModel
+@{
+}
+
+<h1> Your order!</h1>
+<div class="align-content-center">
+    <div class="col-3 mx-auto mb-5">
+        <img src=@Model.ViewShoes.ImageTitle class="w-100" asp-append-version="true" />
+        <br />
+        <img src=@Model.ViewShoes.ImageTitle1 class="w-100" asp-append-version="true" />
+        <br />
+        <img src=@Model.ViewShoes.ImageTitle2 class="w-100" asp-append-version="true" />
+        <br />
+        <img src=@Model.ViewShoes.ImageTitle3 class="w-100" asp-append-version="true" />
+        <br />
+        <p>@Model.ViewShoes.Property</p>
+        <br />
+        <p>Your order for the @Model.ViewShoes.ShoeName is ready!</p>
+        <br />
+        <p>Total price for your order is: @Model.ViewShoes.Price $</p>
+        <br />
+        <form method="post">
+            <h3>Type your information to buy shoes!</h3>
+
+            <div class="container mb-5">
+                <div class="mb-3">
+                    <label for="customerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="customerName" name="CustomerName" />
+                </div>
+                <div class="mb-3">
+                    <label for="customerAddress" class="form-label">Customer Address</label>
+                    <input type="text" class="form-control" id="customerAddress" name="CustomerAddress" />
+                </div>
+                <div class="mb-3">
+                    <label for="customerPhone" class="form-label">Customer Phone</label>
+                    <input type="text" class="form-control" id="customerPhone" name="CustomerPhone" />
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

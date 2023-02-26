@@ -7,6 +7,8 @@ namespace Nevada.Data
     {
         public DbSet<ShoeOrder> ShoeOrders { get; set; }
 
+        public DbSet<ShoesModel> Shoes { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
 

@@ -3,15 +3,15 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Nevada.Data;
 using Nevada.Models;
 
-namespace Nevada.Pages
+namespace Nevada.Pages.Admin.Shoes
 {
-    public class ShoeModel : PageModel
+    public class ListModel : PageModel
     {
         private readonly ApplicationDbContext context;
 
         public List<ShoesModel> Shoes { get; set; }
 
-        public ShoeModel(ApplicationDbContext context)
+        public ListModel(ApplicationDbContext context)
         {
             this.context = context;
         }

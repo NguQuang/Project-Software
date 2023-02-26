@@ -20,23 +20,33 @@
                     <div class="col-8 align-items-center">
                         <div class="align-middle textEdit">
                             <h3 style="text-align:left;">Choose your own Pair of Shoes!</h3>
-                            <a class="btn btnEdit1 btnEdit" style="float:left" >Pick your shoes</a>
+                            <a class="btn btnEdit1 btnEdit" style="float:left">Pick your shoes</a>
                         </div>
                     </div>
                 </div>
 
             </div>
-            @foreach (var shoe in Model.ShoeDB)
+            @foreach (var shoe in Model.Shoes)
             {
-                var imagePath = "~/images/" + (shoe.ImageTitle + ".jpg");
-                <div class="col-4 mb-5">
-                    <a class="shoe-img" asp-area="" asp-page="Checkout/Checkout"
-                   asp-route-ImageTitle="@shoe.ImageTitle"
-                   asp-route-ShoeName="@shoe.ShoeName"
-                   asp-route-Price="@shoe.Price">
-                        <img src="@imagePath" class="w-100" asp-append-version="true" />
-                    </a>
-                    <br />
+                var imagePath = shoe.ImageTitle;
+                <div class="col-4  shoe-img">
+                    <div class="container bg-secondary bg-opacity-10 py-2 mb-5">
+                        <a asp-area="" asp-page="View/View"
+                       asp-route-ImageTitle="@shoe.ImageTitle"
+                       asp-route-ImageTitle="@shoe.ImageTitle1"
+                       asp-route-ImageTitle="@shoe.ImageTitle2"
+                       asp-route-ImageTitle="@shoe.ImageTitle3"
+                       asp-route-ShoeName="@shoe.ShoeName"
+                       asp-route-Price="@shoe.Price"
+                       asp-route-Size="@shoe.Size"
+                       asp-route-OutOfStock="@shoe.OutOfStock"
+                       asp-route-Property="@shoe.Property"
+                       asp-route-Id="@shoe.Id">
+                            <img src="@imagePath" class="w-100 mb-5" asp-append-version="true" />
+                            <p class="text-black mt-2">@shoe.ShoeName</p>
+                        </a>
+                        <br />
+                    </div>
                 </div>
             }
         </div>
