@@ -27,9 +27,6 @@ namespace Nevada.Pages.Admin.Shoes
                 ShoeName = AddShoesRequest.ShoeName,
                 Price = AddShoesRequest.Price,
                 ImageTitle = AddShoesRequest.ImageTitle,
-                ImageTitle1 = AddShoesRequest.ImageTitle1,
-                ImageTitle2 = AddShoesRequest.ImageTitle2,
-                ImageTitle3 = AddShoesRequest.ImageTitle3,
                 OutOfStock = AddShoesRequest.OutOfStock,
                 Property = AddShoesRequest.Property,
                 Size = AddShoesRequest.Size

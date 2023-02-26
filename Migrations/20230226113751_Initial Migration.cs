@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Nevada.Migrations
 {
     /// <inheritdoc />
-    public partial class Initialmigration : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -39,10 +39,7 @@ namespace Nevada.Migrations
                     Property = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Size = table.Column<int>(type: "int", nullable: false),
                     OutOfStock = table.Column<bool>(type: "bit", nullable: false),
-                    ImageTitle = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImageTitle1 = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImageTitle2 = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ImageTitle3 = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ImageTitle = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

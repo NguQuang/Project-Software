@@ -30,23 +30,22 @@
             {
                 var imagePath = shoe.ImageTitle;
                 <div class="col-4  shoe-img">
-                    <div class="container bg-secondary bg-opacity-10 py-2 mb-5">
-                        <a asp-area="" asp-page="View/View"
-                       asp-route-ImageTitle="@shoe.ImageTitle"
-                       asp-route-ImageTitle="@shoe.ImageTitle1"
-                       asp-route-ImageTitle="@shoe.ImageTitle2"
-                       asp-route-ImageTitle="@shoe.ImageTitle3"
-                       asp-route-ShoeName="@shoe.ShoeName"
-                       asp-route-Price="@shoe.Price"
-                       asp-route-Size="@shoe.Size"
-                       asp-route-OutOfStock="@shoe.OutOfStock"
-                       asp-route-Property="@shoe.Property"
-                       asp-route-Id="@shoe.Id">
+                    <a asp-area="" asp-page="View/View"
+                   asp-route-ImageTitle="@shoe.ImageTitle"
+                   asp-route-ShoeName="@shoe.ShoeName"
+                   asp-route-Price="@shoe.Price"
+                   asp-route-Size="@shoe.Size"
+                   asp-route-OutOfStock="@shoe.OutOfStock"
+                   asp-route-Property="@shoe.Property"
+                   asp-route-Id="@shoe.Id">
+                        <div class="container bg-secondary bg-opacity-10 py-2 mb-5">
+
                             <img src="@imagePath" class="w-100 mb-5" asp-append-version="true" />
                             <p class="text-black mt-2">@shoe.ShoeName</p>
-                        </a>
-                        <br />
-                    </div>
+                        </div>
+                    </a>
+                    <br />
+
                 </div>
             }
         </div>

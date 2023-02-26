@@ -26,9 +26,6 @@ namespace Nevada.Pages
                     ShoeName = ViewShoes.ShoeName,
                     Price = ViewShoes.Price,
                     ImageTitle = ViewShoes.ImageTitle,
-                    ImageTitle1 = ViewShoes.ImageTitle1,
-                    ImageTitle2 = ViewShoes.ImageTitle2,
-                    ImageTitle3 = ViewShoes.ImageTitle3,
                     Property = ViewShoes.Property,
                     Size = ViewShoes.Size,
                     OutOfStock = ViewShoes.OutOfStock

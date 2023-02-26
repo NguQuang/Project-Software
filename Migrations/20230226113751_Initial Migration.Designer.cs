@@ -12,8 +12,8 @@ using Nevada.Data;
 namespace Nevada.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230226101351_Initial migration")]
-    partial class Initialmigration
+    [Migration("20230226113751_Initial Migration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,18 +68,6 @@ namespace Nevada.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ImageTitle")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageTitle1")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageTitle2")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageTitle3")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -10,8 +10,5 @@
         public int Size { get; set; }
         public bool OutOfStock { get; set; }
         public string ImageTitle { get; set; }
-        public string ImageTitle1 { get; set; }
-        public string ImageTitle2 { get; set; }
-        public string ImageTitle3 { get; set; }
     }
 }

@@ -32,9 +32,6 @@ namespace Nevada.Pages.Admin.Shoes
                 existingShoe.Size = Shoe.Size;
                 existingShoe.ShoeName = Shoe.ShoeName;
                 existingShoe.ImageTitle = Shoe.ImageTitle;
-                existingShoe.ImageTitle1 = Shoe.ImageTitle1;
-                existingShoe.ImageTitle2 = Shoe.ImageTitle2;
-                existingShoe.ImageTitle3 = Shoe.ImageTitle3;
             }
             context.SaveChanges();
             return RedirectToPage("/Admin/Shoes/List");
