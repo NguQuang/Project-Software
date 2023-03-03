@@ -12,7 +12,7 @@ using Nevada.Data;
 namespace Nevada.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230226113751_Initial Migration")]
+    [Migration("20230303160120_Initial Migration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
